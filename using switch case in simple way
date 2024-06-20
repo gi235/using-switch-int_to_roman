@@ -1,0 +1,267 @@
+import java.util.Scanner;
+public class switch_integer_to_roman {
+    public static void main(String[] args) {
+        Scanner ob = new Scanner(System.in);
+        int number,xnumber,var1,var2,var3,var4;
+        String p,q,r,s;
+
+        System.out.print("Enter number: ");
+        number = ob.nextInt();
+        var1=number/1000;//1
+        xnumber=number-(var1*1000);//234
+        var2=xnumber/100;//2
+        xnumber=xnumber-(var2*100);//34
+        var3=xnumber/10;//3
+        xnumber=xnumber-(var3*10);//4
+        var4=xnumber;//4
+
+        p="M";
+        q="CM";
+        r="D";
+        s="C";
+        switch(var1)
+        {
+
+            case 1:
+        {
+            p="M";
+            break;
+        }
+
+
+            case 2:
+        {
+            p="MM";
+            break;
+        }
+            case 3:
+        {
+            p="MMM";
+            break;
+        }
+
+            case 4:
+        {
+            p="MMMM";
+            break;
+        }
+
+            case 5:
+        {
+            p="MV";
+            break;
+        }
+
+            case 6:
+        {
+            p="MVI";
+            break;
+        }
+
+            case 7:
+        {
+            p="MVII";
+            break;
+        }
+
+            case 8:
+        {
+            p="MVIII";
+            break;
+        }
+
+            case 9:
+        {
+            p="MIX";
+            break;
+        }
+
+            default:{
+                System.out.println("p error");}}
+/**********************************************************/
+        switch(var2){
+            case 1: {
+
+            q="C";
+                break;
+        }
+
+        case 2:
+        {
+            q="CC";
+            break;
+        }
+            case 3:
+        {
+            q="CCC";
+            break;
+        }
+
+            case 4:
+        {
+            q="CCCC";
+            break;
+        }
+
+            case 5:
+        {
+            q="CD";
+            break;
+        }
+
+            case 6:
+        {
+            q="DC";
+            break;
+        }
+
+            case 7:
+        {
+            q="DCC";
+            break;
+        }
+
+            case 8:
+        {
+            q="DCCC";
+            break;
+        }
+
+            case 9:
+        {
+            q="CM";
+            break;
+        }
+            default:{
+                System.out.println("q error");}}
+
+
+
+/***************************************************************/
+
+        switch(var3){
+            case 1:
+        {
+            r="X";
+            break;
+        }
+
+            case 2:
+        {
+            r="XX";
+            break;
+        }
+            case 3:
+        {
+            r="XXX";
+            break;
+        }
+
+            case 4:
+        {
+            r="XL";
+            break;
+        }
+
+            case 5:
+        {
+            r="L";
+            break;
+        }
+
+            case 6:
+        {
+            r="LX";
+            break;
+        }
+
+            case 7:
+        {
+            r="LXX";
+            break;
+        }
+
+            case 8:
+        {
+            r="LXXX";
+            break;
+        }
+
+            case 9:
+        {
+            r="XC";
+            break;
+        }
+
+            default:{
+                System.out.println("r error");}}
+        /******************************************/
+
+
+
+
+
+        switch(var4){
+            case 1:
+
+                {
+            s="I";
+            break;
+        }
+
+            case 2:
+        {
+            s="II";
+            break;
+        }
+            case 3:
+        {
+            s="III";
+            break;
+        }
+
+            case 4:
+        {
+            s="IV";
+            break;
+        }
+
+            case 5:
+        {
+            s="V";
+            break;
+        }
+
+        case 6:
+        {
+            s="VI";
+            break;
+        }
+
+            case 7:
+        {
+            s="VII";
+            break;
+        }
+
+            case 8:
+        {
+            s="VIII";
+            break;
+        }
+
+            case 9:
+        {
+            s="IX";
+            break;
+        }
+            default: {
+            System.out.println("s error");
+            }}
+
+
+        System.out.println(p+q+r+s);
+
+
+    }
+}
